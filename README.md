@@ -22,6 +22,17 @@ npm install --save sequelize  #mysql orm
 
 ## 参考链接
 
+koa教程
 https://www.cnblogs.com/Leo_wl/p/8436357.html
 
-## 
+
+整体项目结构
+
+https://www.cnblogs.com/smartsensor/p/7838169.html
+
+## jwt校验
+
+```bash
+npm i jsonwebtoken # 生成token
+npm i koa-jwt  # 解析token ，并且校验header中是否存在token
+```

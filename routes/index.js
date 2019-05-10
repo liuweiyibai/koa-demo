@@ -1,14 +1,21 @@
 const router = require("koa-router")()
 const path = require("path")
+const util = require("util")
+const jwt = require("jsonwebtoken")
 const fs = require("../utils/fs")
+const verify = util.promisify(jwt.verify)
 
 // 路由中间键
 async function hasPermission(ctx, next) {
+  console.log("执行reuest")
   const random = Math.random().toFixed(2) * 100
   if (random % 2 === 0) {
     ctx.body = random
   } else {
+    // 执行下一个中间键，等待中间键执行完毕，response的时候
+    console.log("执行中间键")
     await next()
+    console.log("当前是响应")
   }
 }
 
@@ -32,10 +39,18 @@ router.get("/", async (ctx, next) => {
 })
 
 router.get("/string", async (ctx, next) => {
-  ctx.body = "koa2 string"
+  // authorization
+  if ("authorization" in ctx.header) {
+    const token = ctx.header.authorization.split(" ")[1]
+    console.log(token)
+    const result = await verify(token, "abc")
+    console.log(result)
+    ctx.body = token
+  }
 })
 
 router.get("/json", hasPermission, async (ctx, next) => {
+  console.log("执行request对应函数")
   try {
     const result = await readFile()
     ctx.body = {
