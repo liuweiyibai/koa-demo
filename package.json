@@ -22,12 +22,14 @@
     "koa-router": "^7.1.1",
     "koa-static": "^3.0.0",
     "koa-views": "^5.2.1",
+    "log4js": "^4.1.1",
     "moment": "^2.24.0",
     "mysql2": "^1.6.5",
     "pug": "^2.0.0-rc.1",
     "sequelize": "^5.8.5"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "nodemon": "^1.8.1"
   }
 }
