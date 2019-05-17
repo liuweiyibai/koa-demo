@@ -1,71 +1,106 @@
-/* jshint indent: 2 */
+const db = require('../config/db')
+const Role = db.import('./role')
 
-module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('user', {
-    id: {
-      type: DataTypes.STRING(255),
-      allowNull: false,
-      defaultValue: '',
-      primaryKey: true
+module.exports = (sequelize, DataTypes) => {
+  const User = sequelize.define(
+    'user',
+    {
+      id: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+        defaultValue: '',
+        primaryKey: true
+      },
+      name: {
+        type: DataTypes.STRING(255),
+        allowNull: true
+      },
+      username: {
+        type: DataTypes.STRING(255),
+        allowNull: true
+      },
+      password: {
+        type: DataTypes.STRING(255),
+        allowNull: true
+      },
+      email: {
+        type: DataTypes.STRING(255),
+        allowNull: true
+      },
+      phone: {
+        type: DataTypes.STRING(255),
+        allowNull: true
+      },
+      company_id: {
+        type: DataTypes.STRING(255),
+        allowNull: true
+      },
+      role_id: {
+        type: DataTypes.STRING(255),
+        allowNull: true
+      },
+      created_at: {
+        type: DataTypes.DATE,
+        allowNull: true
+      },
+      updated_at: {
+        type: DataTypes.DATE,
+        allowNull: true
+      },
+      del: {
+        type: DataTypes.INTEGER(4),
+        allowNull: true,
+        defaultValue: '0'
+      },
+      url: {
+        type: DataTypes.STRING(255),
+        allowNull: true
+      },
+      job: {
+        type: DataTypes.STRING(255),
+        allowNull: true
+      },
+      platform: {
+        type: DataTypes.INTEGER(11),
+        allowNull: true
+      },
+      area_id: {
+        type: DataTypes.STRING(255),
+        allowNull: true
+      }
     },
-    name: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    username: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    password: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    email: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    phone: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    company_id: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    role_id: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    created_at: {
-      type: DataTypes.DATE,
-      allowNull: true
-    },
-    updated_at: {
-      type: DataTypes.DATE,
-      allowNull: true
-    },
-    del: {
-      type: DataTypes.INTEGER(4),
-      allowNull: true,
-      defaultValue: '0'
-    },
-    url: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    job: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    platform: {
-      type: DataTypes.INTEGER(11),
-      allowNull: true
-    },
-    area_id: {
-      type: DataTypes.STRING(255),
-      allowNull: true
+    {
+      tableName: 'user',
+      timestamps: false
     }
-  }, {
-    tableName: 'user'
-  });
-};
+  )
+
+  // User.belongsTo(Role, {
+  //   // 这边的外键
+  //   foreignKey: 'role_id',
+  //   // 对应对面的哪个键
+  //   targetKey: 'id',
+  //   as: 'rname'
+  // })
+
+  User.hasOne(Role,{
+    foreignKey: 'id',
+    sourceKey:"role_id",
+    as:"rname"
+  })
+
+  // User.associate = models => {
+  //   User.hasOne(models.Role, {
+  //     foreignKey: 'id',
+  //     sourceKey: 'role_id'
+  //   })
+  //   User.belongsTo(Role, {
+  //     // 这边的外键
+  //     foreignKey: 'role_id',
+  //     // 对应对面的哪个键
+  //     targetKey: 'id',
+  //     as: 'rname'
+  //   })
+  // }
+  return User
+}

@@ -1,0 +1,194 @@
+[2019-05-17T14:02:14.614] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 7
+response status: 200
+response body: 
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE1NTgwNzI5MzR9.ynnUb5e2putPJ0tPIREJBUi22nlsD4FvCP1xqLngb14"
+*************** response log end ***************
+
+[2019-05-17T14:02:37.175] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 9
+response status: 200
+response body: 
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE1NTgwNzI5NTd9.7cZ2XlUVVEH-Rob08KvP1r0uRQ0NzjhtESAXLOYpuMo"}
+*************** response log end ***************
+
+[2019-05-17T14:03:09.575] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login?username=admin&password=admin
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 2
+response status: 200
+response body: 
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE1NTgwNzI5ODl9.uV3gRmAArVR2n-y7ZxYbqhWHnlIuzjr00ypxJPo3P4c"}
+*************** response log end ***************
+
+[2019-05-17T14:05:27.967] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"admin","password":"admin"}
+response time: 4
+response status: 200
+response body: 
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE1NTgwNzMxMjd9.vhtTineYkaPluvT_vD_wnZGlUN3CCge__Eu1XdqjVSc"}
+*************** response log end ***************
+
+[2019-05-17T14:05:40.926] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"admin","password":"admin"}
+response time: 3
+response status: 200
+response body: 
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE1NTgwNzMxNDB9.sUdipH4-ypEX03YcoClb9uEcuo8AfZRa5xoY1GlZKlY"}
+*************** response log end ***************
+
+[2019-05-17T14:06:19.494] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"admin","password":"admin"}
+response time: 3
+response status: 200
+response body: 
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE1NTgwNzMxNzl9.AECPEgMUFxhDzYDJBK9ND_qIGCB4uUk0cJmFwxWi1rg"}
+*************** response log end ***************
+
+[2019-05-17T14:25:03.302] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"admin","password":"123456"}
+response time: 4
+response status: 200
+response body: 
+{"code":200}
+*************** response log end ***************
+
+[2019-05-17T14:26:15.453] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"admin","password":"123456"}
+response time: 5
+response status: 200
+response body: 
+{"code":200}
+*************** response log end ***************
+
+[2019-05-17T14:26:35.195] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"admin","password":"123456"}
+response time: 49
+response status: 200
+response body: 
+{"code":200}
+*************** response log end ***************
+
+[2019-05-17T14:26:55.845] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"admin","password":"123456"}
+response time: 43
+response status: 200
+response body: 
+{"code":200}
+*************** response log end ***************
+
+[2019-05-17T14:29:23.057] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"admin","password":"123456"}
+response time: 59
+response status: 200
+response body: 
+{"code":200,"messag":"用户名已经存在"}
+*************** response log end ***************
+
+[2019-05-17T14:30:59.471] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"admin","password":"123456"}
+response time: 53
+response status: 200
+response body: 
+{"code":200,"messag":"用户名已经存在"}
+*************** response log end ***************
+
+[2019-05-17T14:33:04.018] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"admin","password":"123456"}
+response time: 43
+response status: 200
+response body: 
+{"code":200,"messag":"用户名已经存在"}
+*************** response log end ***************
+
+[2019-05-17T14:33:33.668] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"admin","password":"123456"}
+response time: 48
+response status: 200
+response body: 
+{"code":200,"messag":"用户名已经存在"}
+*************** response log end ***************
+
+[2019-05-17T14:42:10.894] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /user
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+

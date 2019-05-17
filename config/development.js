@@ -1,3 +1,0 @@
-moudle.exports = {
-  env: "development"
-};

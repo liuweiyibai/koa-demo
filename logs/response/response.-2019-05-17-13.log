@@ -1,0 +1,77 @@
+[2019-05-17T13:04:30.045] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /open/company-list
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+{"code":200,"message":"请求企业列表"}
+*************** response log end ***************
+
+[2019-05-17T13:56:20.124] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-17T13:57:34.992] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-17T13:58:04.138] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-17T13:59:32.720] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-17T13:59:42.773] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+

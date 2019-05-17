@@ -3,7 +3,8 @@
 /**
  * Module dependencies.
  */
-
+require('console-color-mr')
+require("../utils/log_exist")()
 var app = require("../app")
 var debug = require("debug")("demo:server")
 var http = require("http")
@@ -95,11 +96,12 @@ function getIPAdress() {
     }
   }
 }
+
 function onListening() {
   var addr = server.address()
   var ip_address = getIPAdress()
   var port = addr.port
-  console.log(`server is running ${ip_address}:${port}`)
+  console.info(`server is running ${ip_address}:${port}`)
   var bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port
   debug("Listening on " + bind)
 }

@@ -1,0 +1,22 @@
+[2019-05-15T18:04:50.468] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /open/company/42343242432
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+err name: InternalServerError
+err message: 你特么在逗我
+err stack: InternalServerError: 你特么在逗我
+    at Object.throw (C:\Users\snowman\Desktop\Learn\koa-demo\node_modules\koa\lib\context.js:97:11)
+    at router.get (C:\Users\snowman\Desktop\Learn\koa-demo\routes\open\company.js:11:12)
+    at dispatch (C:\Users\snowman\Desktop\Learn\koa-demo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\snowman\Desktop\Learn\koa-demo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\snowman\Desktop\Learn\koa-demo\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\snowman\Desktop\Learn\koa-demo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\snowman\Desktop\Learn\koa-demo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\snowman\Desktop\Learn\koa-demo\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\snowman\Desktop\Learn\koa-demo\node_modules\koa-compose\index.js:42:32)
+    at app.use (C:\Users\snowman\Desktop\Learn\koa-demo\app.js:60:11)
+*************** error log end ***************
+
