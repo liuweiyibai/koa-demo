@@ -62,11 +62,17 @@
 // })
 
 // module.exports = router
-const router = require('koa-router')()
+const router = require("koa-router")();
 
-const openApi = require('./open/index')
-const apiUser = require('./api/router_user')
-router.use(openApi.routes(), openApi.allowedMethods())
-router.use(apiUser.routes(), apiUser.allowedMethods())
+const openApi = require("./open/index");
+const apiUser = require("./api/router_user");
+router.use(openApi.routes(), openApi.allowedMethods());
+router.use(apiUser.routes(), apiUser.allowedMethods());
 
-module.exports = router
+router.get(`/register`, async ctx => {
+  ctx.body = {
+    code: 200,
+    message: "register"
+  };
+});
+module.exports = router;

@@ -1,14 +1,16 @@
-const db = require('../config/db')
-const Role = db.import('./role')
+const db = require("../config/db");
+const Role = db.import("./role");
+const City = db.import("./city");
+const Company = db.import("./company");
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
-    'user',
+    "user",
     {
       id: {
         type: DataTypes.STRING(255),
         allowNull: false,
-        defaultValue: '',
+        defaultValue: "",
         primaryKey: true
       },
       name: {
@@ -50,7 +52,7 @@ module.exports = (sequelize, DataTypes) => {
       del: {
         type: DataTypes.INTEGER(4),
         allowNull: true,
-        defaultValue: '0'
+        defaultValue: "0"
       },
       url: {
         type: DataTypes.STRING(255),
@@ -70,10 +72,10 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     {
-      tableName: 'user',
+      tableName: "user",
       timestamps: false
     }
-  )
+  );
 
   // User.belongsTo(Role, {
   //   // 这边的外键
@@ -83,11 +85,24 @@ module.exports = (sequelize, DataTypes) => {
   //   as: 'rname'
   // })
 
-  User.hasOne(Role,{
-    foreignKey: 'id',
-    sourceKey:"role_id",
-    as:"rname"
-  })
+  User.hasOne(Role, {
+    foreignKey: "id",
+    sourceKey: "role_id",
+    as: "role"
+  });
+
+  User.hasOne(City, {
+    foreignKey: "id",
+    sourceKey: "area_id",
+    as: "city"
+  });
+  User.belongsTo(Company, {
+    // 这边的外键
+    foreignKey: "company_id",
+    // 对应对面的哪个键
+    targetKey: "id",
+    as: "company"
+  });
 
   // User.associate = models => {
   //   User.hasOne(models.Role, {
@@ -102,5 +117,5 @@ module.exports = (sequelize, DataTypes) => {
   //     as: 'rname'
   //   })
   // }
-  return User
-}
+  return User;
+};
