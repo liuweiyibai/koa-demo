@@ -1,0 +1,140 @@
+[2019-05-24T22:17:51.374] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"04470372-d95a-42ac-961f-5d4dc638399d","name":"每年大健康"}
+response time: 2
+err name: TypeError
+err message: BusinessDao.update is not a function
+err stack: TypeError: BusinessDao.update is not a function
+    at put (/home/snowman/桌面/koa-demo/controllers/businessController.js:13:38)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/snowman/桌面/koa-demo/app.js:62:11)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-compose/index.js:42:32)
+*************** error log end ***************
+
+[2019-05-24T22:20:00.515] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"04470372-d95a-42ac-961f-5d4dc638399d","name":"每年大健康"}
+response time: 3
+err name: TypeError
+err message: Class constructor BusinessDao cannot be invoked without 'new'
+err stack: TypeError: Class constructor BusinessDao cannot be invoked without 'new'
+    at put (/home/snowman/桌面/koa-demo/controllers/businessController.js:14:26)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/snowman/桌面/koa-demo/app.js:62:11)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-compose/index.js:42:32)
+*************** error log end ***************
+
+[2019-05-24T22:21:53.627] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"04470372-d95a-42ac-961f-5d4dc638399d","name":"每年大健康"}
+response time: 3
+err name: TypeError
+err message: Class constructor BusinessDao cannot be invoked without 'new'
+err stack: TypeError: Class constructor BusinessDao cannot be invoked without 'new'
+    at put (/home/snowman/桌面/koa-demo/controllers/businessController.js:14:26)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/snowman/桌面/koa-demo/app.js:62:11)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-compose/index.js:42:32)
+*************** error log end ***************
+
+[2019-05-24T22:24:41.111] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"04470372-d95a-42ac-961f-5d4dc638399d","name":"每年大健康"}
+response time: 2
+err name: TypeError
+err message: BusinessDao.put is not a function
+err stack: TypeError: BusinessDao.put is not a function
+    at put (/home/snowman/桌面/koa-demo/controllers/businessController.js:14:38)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at allowedMethods (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:407:12)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /home/snowman/桌面/koa-demo/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-compose/index.js:42:32)
+    at app.use (/home/snowman/桌面/koa-demo/app.js:62:11)
+    at dispatch (/home/snowman/桌面/koa-demo/node_modules/koa-compose/index.js:42:32)
+*************** error log end ***************
+

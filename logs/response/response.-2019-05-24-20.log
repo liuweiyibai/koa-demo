@@ -1,0 +1,13 @@
+[2019-05-24T20:59:51.844] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /user/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"abc@163.com","password":"123456"}
+response time: 6
+response status: 200
+response body: 
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJpYXQiOjE1NTg3MDI3OTF9.NVfkrfxWbuixcK876O5fLBuBAWM5oA_9v9bKQA3H9wo"}
+*************** response log end ***************
+

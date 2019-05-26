@@ -1,0 +1,131 @@
+[2019-05-25T08:44:03.943] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"无限战争"}
+response time: 17
+err name: SequelizeDatabaseError
+err message: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+err stack: SequelizeDatabaseError: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '='
+    at Query.formatError (/home/snowman/桌面/koa-demo/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.handler [as onResult] (/home/snowman/桌面/koa-demo/node_modules/sequelize/lib/dialects/mysql/query.js:46:23)
+    at Query.execute (/home/snowman/桌面/koa-demo/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/home/snowman/桌面/koa-demo/node_modules/mysql2/lib/connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/snowman/桌面/koa-demo/node_modules/mysql2/lib/connection.js:72:12)
+    at PacketParser.executeStart (/home/snowman/桌面/koa-demo/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/snowman/桌面/koa-demo/node_modules/mysql2/lib/connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+*************** error log end ***************
+
+[2019-05-25T08:55:47.574] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"无限战争"}
+response time: 9
+err name: TypeError
+err message: Cannot read property 'hasOwnProperty' of undefined
+err stack: TypeError: Cannot read property 'hasOwnProperty' of undefined
+    at Function._paranoidClause (/home/snowman/桌面/koa-demo/node_modules/sequelize/lib/model.js:204:52)
+    at Promise.try.then.then (/home/snowman/桌面/koa-demo/node_modules/sequelize/lib/model.js:1740:22)
+    at tryCatcher (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:694:18)
+    at _drainQueueStep (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:138:12)
+    at _drainQueue (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:131:9)
+    at Async._drainQueues (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:694:18)
+    at tryOnImmediate (timers.js:665:5)
+    at processImmediate (timers.js:647:5)
+*************** error log end ***************
+
+[2019-05-25T08:56:05.362] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"无限战争"}
+response time: 18
+err name: SequelizeDatabaseError
+err message: Unknown column 'deletedAt' in 'field list'
+err stack: SequelizeDatabaseError: Unknown column 'deletedAt' in 'field list'
+    at Query.formatError (/home/snowman/桌面/koa-demo/node_modules/sequelize/lib/dialects/mysql/query.js:239:16)
+    at Query.handler [as onResult] (/home/snowman/桌面/koa-demo/node_modules/sequelize/lib/dialects/mysql/query.js:46:23)
+    at Query.execute (/home/snowman/桌面/koa-demo/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/home/snowman/桌面/koa-demo/node_modules/mysql2/lib/connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/snowman/桌面/koa-demo/node_modules/mysql2/lib/connection.js:72:12)
+    at PacketParser.executeStart (/home/snowman/桌面/koa-demo/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/snowman/桌面/koa-demo/node_modules/mysql2/lib/connection.js:79:25)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+*************** error log end ***************
+
+[2019-05-25T08:56:25.446] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"无限战争"}
+response time: 10
+err name: TypeError
+err message: Cannot read property 'hasOwnProperty' of undefined
+err stack: TypeError: Cannot read property 'hasOwnProperty' of undefined
+    at Function._paranoidClause (/home/snowman/桌面/koa-demo/node_modules/sequelize/lib/model.js:204:52)
+    at Promise.try.then.then (/home/snowman/桌面/koa-demo/node_modules/sequelize/lib/model.js:1740:22)
+    at tryCatcher (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:694:18)
+    at _drainQueueStep (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:138:12)
+    at _drainQueue (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:131:9)
+    at Async._drainQueues (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:694:18)
+    at tryOnImmediate (timers.js:665:5)
+    at processImmediate (timers.js:647:5)
+*************** error log end ***************
+
+[2019-05-25T08:57:03.063] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"无限战争"}
+response time: 8
+err name: TypeError
+err message: Cannot read property 'hasOwnProperty' of undefined
+err stack: TypeError: Cannot read property 'hasOwnProperty' of undefined
+    at Function._paranoidClause (/home/snowman/桌面/koa-demo/node_modules/sequelize/lib/model.js:204:52)
+    at Promise.try.then.then (/home/snowman/桌面/koa-demo/node_modules/sequelize/lib/model.js:1740:22)
+    at tryCatcher (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/promise.js:694:18)
+    at _drainQueueStep (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:138:12)
+    at _drainQueue (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:131:9)
+    at Async._drainQueues (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/snowman/桌面/koa-demo/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:694:18)
+    at tryOnImmediate (timers.js:665:5)
+    at processImmediate (timers.js:647:5)
+*************** error log end ***************
+

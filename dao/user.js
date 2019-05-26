@@ -25,13 +25,15 @@ class UserDao {
     }
     try {
       return await User.findAndCountAll({
+        // 是否返回原始数据,在一对一的时候建议设置为true
         raw: true,
         limit,
         offset,
-        distinct: true,
         attributes: {
+          // 忽略当期主数据的 del 属性
           exclude: ["del"],
           // 将 db.col("role.name") 属性命名为 rname
+          // 一对一的时候添加属性别名
           // 用户一对一用户角色
           include: [
             [db.col("role.name"), "rname"],
@@ -50,7 +52,8 @@ class UserDao {
           {
             model: City,
             as: "city",
-            // 不指定arributes 即返回所有属性
+            // 这里要将  attributes 设置为[],不然会和 上面的 
+            // attribute 的 include 属性中已经指定了要显示哪些字段并且要要显示哪些别名
             attributes: []
           },
           {

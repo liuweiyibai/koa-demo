@@ -1,0 +1,286 @@
+[2019-05-24T22:01:18.450] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"更规范广告"}
+response time: 29
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-24T22:02:00.634] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"更规范广告"}
+response time: 34
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-24T22:02:19.200] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"更规范广告"}
+response time: 28
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-24T22:03:15.124] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"更规范广告"}
+response time: 37
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-24T22:04:33.747] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"更规范广告"}
+response time: 29
+response status: 200
+response body: 
+{"code":200,"data":{"created_at":{"fn":"NOW","args":[]},"updated_at":{"fn":"NOW","args":[]},"id":"db7799a0-7e2c-11e9-ab15-1df4ff9715e1","del":0,"name":"更规范广告"}}
+*************** response log end ***************
+
+[2019-05-24T22:05:40.364] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"更规范广告"}
+response time: 38
+response status: 200
+response body: 
+{"code":200,"data":{"created_at":{"fn":"NOW","args":[]},"updated_at":{"fn":"NOW","args":[]},"id":"032b2ca0-7e2d-11e9-8fd8-4dca6c463b1b","del":0,"name":"更规范广告"}}
+*************** response log end ***************
+
+[2019-05-24T22:06:58.192] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"更规范广告"}
+response time: 37
+response status: 200
+response body: 
+{"code":200,"data":{"created_at":"2019-05-24T14:06:58.160Z","updated_at":"2019-05-24T14:06:58.162Z","id":"318eeff0-7e2d-11e9-94cb-1964a87a9291","del":0,"name":"更规范广告"}}
+*************** response log end ***************
+
+[2019-05-24T22:14:06.583] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"61645690-7e2b-11e9-b203-8dbf8509217e","name":"少年包青天"}
+response time: 39
+response status: 200
+response body: 
+{"code":200,"data":{"created_at":"2019-05-24T14:14:06.546Z","updated_at":"2019-05-24T14:14:06.549Z","id":"30e59b20-7e2e-11e9-bcb9-d7591026e040","del":0,"name":"少年包青天"}}
+*************** response log end ***************
+
+[2019-05-24T22:14:19.247] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"61645690-7e2b-11e9-b203-8dbf8509217e","name":"少年包青天"}
+response time: 13
+response status: 200
+response body: 
+{"code":200,"data":{"created_at":"2019-05-24T14:14:19.234Z","updated_at":"2019-05-24T14:14:19.235Z","id":"3875a420-7e2e-11e9-bcb9-d7591026e040","del":0,"name":"少年包青天"}}
+*************** response log end ***************
+
+[2019-05-24T22:14:57.924] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"61645690-7e2b-11e9-b203-8dbf8509217e","name":"少年包青天"}
+response time: 35
+response status: 200
+response body: 
+{"code":200,"data":{"created_at":"2019-05-24T14:14:57.891Z","updated_at":"2019-05-24T14:14:57.892Z","id":"4f803b30-7e2e-11e9-b73f-27061db1b084","del":0,"name":"少年包青天"}}
+*************** response log end ***************
+
+[2019-05-24T22:15:44.001] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"61645690-7e2b-11e9-b203-8dbf8509217e","name":"少年包青天"}
+response time: 22
+response status: 200
+response body: 
+{"code":200,"data":{"created_at":"2019-05-24T14:15:43.978Z","updated_at":"2019-05-24T14:15:43.979Z","id":"6af88ca0-7e2e-11e9-b73f-27061db1b084","del":0,"name":"少年包青天"}}
+*************** response log end ***************
+
+[2019-05-24T22:16:28.897] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"04470372-d95a-42ac-961f-5d4dc638399d","name":"每年大健康"}
+response time: 12
+response status: 200
+response body: 
+{"code":200,"data":{"created_at":"2019-05-24T14:16:28.886Z","updated_at":"2019-05-24T14:16:28.886Z","id":"85bcf760-7e2e-11e9-b73f-27061db1b084","del":0,"name":"每年大健康"}}
+*************** response log end ***************
+
+[2019-05-24T22:16:57.202] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"04470372-d95a-42ac-961f-5d4dc638399d","name":"每年大健康"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"data":{"created_at":"2019-05-24T14:16:57.192Z","updated_at":"2019-05-24T14:16:57.192Z","id":"969c1e80-7e2e-11e9-b73f-27061db1b084","del":0,"name":"每年大健康"}}
+*************** response log end ***************
+
+[2019-05-24T22:17:25.444] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"04470372-d95a-42ac-961f-5d4dc638399d","name":"每年大健康"}
+response time: 42
+response status: 200
+response body: 
+{"code":200,"data":{"created_at":"2019-05-24T14:17:25.406Z","updated_at":"2019-05-24T14:17:25.409Z","id":"a76d3be0-7e2e-11e9-a636-abec8dd34c76","del":0,"name":"每年大健康"}}
+*************** response log end ***************
+
+[2019-05-24T22:25:05.078] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"04470372-d95a-42ac-961f-5d4dc638399d","name":"每年大健康"}
+response time: 32
+response status: 200
+response body: 
+{"code":200,"data":[1]}
+*************** response log end ***************
+
+[2019-05-24T22:26:44.000] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"04470372-d95a-42ac-961f-5d4dc638399d","name":"每年大健康"}
+response time: 37
+response status: 200
+response body: 
+{"code":200,"data":[1]}
+*************** response log end ***************
+
+[2019-05-24T22:41:29.561] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"当当网"}
+response time: 40
+response status: 200
+response body: 
+{"code":200,"data":{"createdAt":"2019-05-24T14:41:29.523Z","updatedAt":"2019-05-24T14:41:29.525Z","id":"04300030-7e32-11e9-ab09-e79347edefc3","del":0,"name":"当当网"}}
+*************** response log end ***************
+
+[2019-05-24T22:43:14.307] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"a76d3be0-7e2e-11e9-a636-abec8dd34c76","name":"权利的游戏"}
+response time: 37
+response status: 200
+response body: 
+{"code":200,"data":[1]}
+*************** response log end ***************
+
+[2019-05-24T22:47:00.465] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"133b325e-ce18-42f3-9a0c-afd0d647441e","name":"复仇者联盟_1"}
+response time: 37
+response status: 200
+response body: 
+{"code":200,"data":[1]}
+*************** response log end ***************
+
+[2019-05-24T22:47:53.268] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"111","name":"复仇者联盟_1"}
+response time: 10
+response status: 200
+response body: 
+{"code":200,"data":[0]}
+*************** response log end ***************
+
+[2019-05-24T22:57:37.017] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"111","name":"复仇者联盟_1"}
+response time: 33
+response status: 200
+response body: 
+{"code":200,"data":false}
+*************** response log end ***************
+
+[2019-05-24T22:57:59.705] [INFO] resLogger - 
+*************** response log start ***************
+request method: PUT
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"id":"2cc3552a-3859-42cc-8c46-fe977f86852c","name":"复仇者联盟_奥创纪元"}
+response time: 17
+response status: 200
+response body: 
+{"code":200,"data":true}
+*************** response log end ***************
+

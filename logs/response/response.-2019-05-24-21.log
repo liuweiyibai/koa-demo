@@ -1,0 +1,65 @@
+[2019-05-24T21:00:05.911] [INFO] resLogger - 
+*************** response log start ***************
+request method: DELETE
+request originalUrl:  /user/01d01920-ecf6-4de3-a316-7aa378fd242342434
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-24T21:21:43.221] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"你在逗我"}
+response time: 33
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-24T21:50:58.973] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"你在逗我"}
+response time: 31
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-24T21:53:59.436] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"更规范广告"}
+response time: 23
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2019-05-24T21:54:22.699] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /business
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"更规范广告"}
+response time: 29
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+

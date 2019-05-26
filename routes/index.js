@@ -66,8 +66,10 @@ const router = require("koa-router")();
 
 const openApi = require("./open/index");
 const apiUser = require("./api/router_user");
+const apiBusiness = require("./api/r_bussiness");
 router.use(openApi.routes(), openApi.allowedMethods());
 router.use(apiUser.routes(), apiUser.allowedMethods());
+router.use(apiBusiness.routes(), apiBusiness.allowedMethods());
 
 router.get(`/register`, async ctx => {
   ctx.body = {
