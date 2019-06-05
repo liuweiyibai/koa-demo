@@ -1,6 +1,6 @@
-const fs = require("fs")
-const path = require("path")
-const logConfig = require("../config/log_config")
+const fs = require('fs')
+const path = require('path')
+const logConfig = require('./LogConfig')
 const keys = Object.keys(logConfig.appenders)
 
 // 判断日志文件路径是否存在

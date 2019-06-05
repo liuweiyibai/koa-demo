@@ -62,19 +62,28 @@
 // })
 
 // module.exports = router
-const router = require("koa-router")();
+const router = require('koa-router')()
 
-const openApi = require("./open/index");
-const apiUser = require("./api/router_user");
-const apiBusiness = require("./api/r_bussiness");
-router.use(openApi.routes(), openApi.allowedMethods());
-router.use(apiUser.routes(), apiUser.allowedMethods());
-router.use(apiBusiness.routes(), apiBusiness.allowedMethods());
+const openApi = require('./open/index')
+const userApi = require('./api/router_user')
+const businessApi = require('./api/r_bussiness')
+
+router.use(openApi.routes(), openApi.allowedMethods())
+router.use(userApi.routes(), userApi.allowedMethods())
+router.use(businessApi.routes(), businessApi.allowedMethods())
 
 router.get(`/register`, async ctx => {
+  async function delay(time) {
+    return new Promise(function(resolve, reject) {
+      setTimeout(function() {
+        resolve()
+      }, time)
+    })
+  }
+  await delay(5000)
   ctx.body = {
     code: 200,
-    message: "register"
-  };
-});
-module.exports = router;
+    data: 'fdssfs'
+  }
+})
+module.exports = router

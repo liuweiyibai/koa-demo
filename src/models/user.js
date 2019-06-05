@@ -84,7 +84,7 @@ module.exports = (sequelize, DataTypes) => {
   //   targetKey: 'id',
   //   as: 'rname'
   // })
-
+  // 源: 调用 sequelize 中关系方法的调用者
   User.hasOne(Role, {
     foreignKey: "id",
     sourceKey: "role_id",

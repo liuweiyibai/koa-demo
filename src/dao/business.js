@@ -74,13 +74,13 @@ module.exports = BusinessDao;
  * 
  * 
  *  [Op.or]: [
-          {
-            id
-          },
-          {
-            name: {
-              [Op.like]: `%${keyword}%`
-            }
-          }
-        ]
+      {
+        id
+      },
+      {
+        name: {
+          [Op.like]: `%${keyword}%`
+        }
+      }
+    ]
  */

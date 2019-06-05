@@ -1,9 +1,13 @@
-const router = require("koa-router")()
+const router = require('koa-router')()
 // const db = require("../../config/db")
 // const Sequelize = db.sequelize
 // const company = Sequelize.import("../../models/company")
-const company = require("./company")
-router.prefix("/open")
+const company = require('./company')
+const country = require('./country')
+
+const worldcity = require('./worldcity')
+
+router.prefix('/open')
 
 // router.get(`/company_list`, async ctx => {
 //   try {
@@ -24,5 +28,16 @@ router.prefix("/open")
 // })
 
 router.use(company.routes(), company.allowedMethods())
+router.use(country.routes(), country.allowedMethods())
+router.use(worldcity.routes(), worldcity.allowedMethods())
+
+router.get(`/current`, ctx => {
+  setTimeout(() => {
+    ctx.body = {
+      code: 200,
+      data: 'fdssfs'
+    }
+  }, 10000)
+})
 
 module.exports = router

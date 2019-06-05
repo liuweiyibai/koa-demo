@@ -1,17 +1,17 @@
-const Koa = require("koa")
+require('./src/utils/pathAlias')
+const Koa = require('koa')
 const app = new Koa()
-const json = require("koa-json")
-const onerror = require("koa-onerror")
-const koaBody = require("koa-body")
-const logger = require("koa-logger")
-const jwtKoa = require("koa-jwt")
+const json = require('koa-json')
+const onerror = require('koa-onerror')
+const koaBody = require('koa-body')
+const logger = require('koa-logger')
+const jwtKoa = require('koa-jwt')
 
-// const handling_401 = require("./middlewares/handling_401")
-const response_formatter = require("./middlewares/response_formatter")
-const logUtil = require("./utils/log_util")
-const index = require("./routes/index")
+const response_formatter = require('./src/middlewares/response_formatter')
+const logUtil = require('./src/syslog/logUtil')
+const index = require('./src/routes/index')
 
-const secret = "abc"
+const secret = 'uiuiuiuiuiuiuiuiui'
 
 // error handler
 onerror(app)
@@ -24,16 +24,14 @@ onerror(app)
 // })
 // 注意中间键的顺序
 // 最前面的中间键会最先调用也会最后调用
-// app.use(handling_401)
-
-app.use(response_formatter("^/open"))
+// app.use(response_formatter('^/open'))
 
 // 跨域配置
 
 // 中间键,用来拦截请求头是否有token
 app.use(
   jwtKoa({ secret }).unless({
-    path: [/^\/user\/login/, /^\/register$/, /^\/open/]
+    path: [/^\/user\/login$/, /^\/register$/, /^\/open/]
   })
 )
 
@@ -74,8 +72,8 @@ app.use(async (ctx, next) => {
 app.use(index.routes(), index.allowedMethods())
 
 // 监听error事件
-app.on("error", (err, ctx) => {
-  console.error("server error", err, ctx)
+app.on('error', (err, ctx) => {
+  console.error('server error', err, ctx)
 })
 
 module.exports = app

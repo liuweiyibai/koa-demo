@@ -1,10 +1,6 @@
 /**
  * 返回统一的数据格式，比如响应code和响应message
  */
-const response = {
-  code: 0,
-  message: ''
-}
 let response_status = null
 
 module.exports = pattern => {
@@ -23,6 +19,8 @@ module.exports = pattern => {
             code: 404,
             message: '您访问的api不存在'
           }
+        } else {
+          ctx.body = ctx.body
         }
       }
     } catch (error) {
@@ -32,16 +30,9 @@ module.exports = pattern => {
       console.log(Object.keys(error))
       console.log(error.message)
       //
-      if (error.status) {
-        response_status = error.status
-      }
-    } finally {
-      console.log('====================================')
-      console.log(response_status)
-      console.log('====================================')
-      if (response_status === 401) {
+      if (error.status && error.status === 401) {
         ctx.body = {
-          code: response_status,
+          code: 401,
           message: '受保护资源，使用授权字符获取访问权限'
         }
       }

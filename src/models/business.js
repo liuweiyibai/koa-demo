@@ -2,7 +2,7 @@
 
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define(
-    "business",
+    'business',
     {
       id: {
         type: DataTypes.UUID,
@@ -50,18 +50,21 @@ module.exports = function(sequelize, DataTypes) {
     },
     {
       timestamps: true,
-      tableName: "business",
-      createdAt: "created_at",
-      updatedAt: "updated_at"
-
+      tableName: 'business',
+      // 会自动关联field createdAt到  created_at字段
+      createdAt: 'created_at',
+      updatedAt: 'updated_at',
+      freezeTableName: true
       /**
-       * 我不想启用 deletedAt 所以设置为false 而且 paranoid 要启用
+       * 我不想启用 deletedAt 所以设置为false
        */
-      // deletedAt: false,
-      // paranoid: true
+      // deletedAt: true,
+      // paranoid: true,
+      // 删除数据时不删除数据，而是更新deleteAt字段 如果需要设置为true，则上面的deleteAt字段不能为false，也就是说必须启用
+      // paranoid: false
     }
-  );
-};
+  )
+}
 
 /**
  * Sequelize 自动会生成 createdAt
