@@ -6,7 +6,7 @@ const onerror = require('koa-onerror')
 const koaBody = require('koa-body')
 const logger = require('koa-logger')
 const jwtKoa = require('koa-jwt')
-
+const cors = require('koa2-cors')
 const response_formatter = require('./src/middlewares/response_formatter')
 const logUtil = require('./src/syslog/logUtil')
 const index = require('./src/routes/index')
@@ -27,11 +27,25 @@ onerror(app)
 // app.use(response_formatter('^/open'))
 
 // 跨域配置
+app.use(
+  cors({
+    exposeHeaders: ['Xtoken'],
+    credentials: true
+  })
+)
+
+// 自定义请求头
+app.use(async (ctx, next) => {
+  if (ctx.header['xtoken']) {
+    ctx.header['authorization'] = ctx.header.xtoken
+  }
+  await next()
+})
 
 // 中间键,用来拦截请求头是否有token
 app.use(
   jwtKoa({ secret }).unless({
-    path: [/^\/user\/login$/, /^\/register$/, /^\/open/]
+    path: [/^\/user\/login$/, /^\/register$/, /^\/open/, /^\/upload\/image/]
   })
 )
 

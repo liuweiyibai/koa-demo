@@ -17,6 +17,7 @@ router.post(`/login`, async ctx => {
     const token = jwt.sign(payload, secret, {
       algorithm: 'HS512'
     })
+    console.log(token)
     ctx.body = { token }
   } else {
     ctx.body = {
@@ -50,12 +51,10 @@ router.get('/current', async ctx => {
   const {
     header: { authorization }
   } = ctx
-  setTimeout(()=>{
     ctx.body = {
       code:200,
-      data:"fdssfs"
+      authorization
     }
-  },10000)
 
   // const token = authorization.replace('Bearer ', '')
   // // 手动解析 token

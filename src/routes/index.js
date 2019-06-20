@@ -86,4 +86,38 @@ router.get(`/register`, async ctx => {
     data: 'fdssfs'
   }
 })
+
+// 上传图片，前端通过formData传递参数，实例代码
+
+/**
+ *   const _params = { ...this.params }
+      _params.companyId = this.id
+      const keys = Object.keys(_params)
+      const formData = new FormData()
+      keys.forEach(t => {
+        formData.append(t, _params[t])
+      })
+ * export const uploadImagePeiDian = formData => {
+  return request({
+    url: `${ip}/distributionChart/upload`,
+    // url:"http://192.168.1.72:3001/upload/image",
+    method: 'post',
+    data: formData,
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    },
+    // withCredentials:true
+  }).then(res => res.data)
+}
+
+ * 
+ */
+router.post(`/upload/image`,async ctx=>{
+
+  console.log(JSON.stringify(ctx.request.body,null,4))
+  console.log(ctx.request.files)
+  ctx.body = {
+    code:200
+  }
+})
 module.exports = router
