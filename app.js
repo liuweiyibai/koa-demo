@@ -1,5 +1,7 @@
 require('./src/utils/pathAlias')
 const Koa = require('koa')
+// const websockify = require('koa-websocket')
+// const app = websockify(new Koa())
 const app = new Koa()
 const json = require('koa-json')
 const onerror = require('koa-onerror')
@@ -83,11 +85,82 @@ app.use(async (ctx, next) => {
 })
 
 // 使用中间键来注册路由
-app.use(index.routes(), index.allowedMethods())
+// app.use(index.routes(), index.allowedMethods())
 
 // 监听error事件
 app.on('error', (err, ctx) => {
   console.error('server error', err, ctx)
 })
 
-module.exports = app
+// // Using routes
+// const router = require('koa-router')()
+// app.ws.use(
+//   router.all('/ws', async ctx => {
+//     ctx.websocket.send('Hello World')
+//     ctx.websocket.on('message', function(message) {
+//       // do something with the message from client
+//       console.log(message)
+//     })
+//   })
+// )
+
+const http = require('http')
+const url = require('url')
+const server = http.createServer(app.callback())
+
+const WebSocket = require('ws')
+
+// const wss1 = new WebSocket.Server({ server })
+const wss1 = new WebSocket.Server({ noServer: true })
+const wss2 = new WebSocket.Server({ noServer: true })
+
+server.on('upgrade', (request, socket, head) => {
+  const pathname = url.parse(request.url).pathname
+  console.log(pathname)
+  if (pathname === '/ws') {
+    wss1.handleUpgrade(request, socket, head, function done(ws) {
+      wss1.emit('connection', ws, request)
+    })
+  } else if (pathname === '/ws2') {
+    wss2.handleUpgrade(request, socket, head, function done(ws) {
+      wss2.emit('connection', ws, request)
+    })
+  } else {
+    socket.destroy()
+  }
+})
+
+const test = {
+  time: '今天',
+  companyName: '哈哈哈',
+  deviceName: '企业',
+  location: '天安门',
+  content: 'baojingle',
+  id: 1
+}
+
+wss1.on('connection', ws => {
+  ws.on('message', meg => {})
+  const timer = setInterval(() => {
+    test.id = test.id++
+    if (test.id === 25) {
+      clearInterval(timer)
+      return
+    }
+    ws.send(JSON.stringify(test))
+  }, 10000)
+})
+
+wss2.on('connection', ws => {
+  let number = 25
+  ws.on('message', meg => {})
+  const timer = setInterval(() => {
+    if (test.id === 25) {
+      clearInterval(timer)
+      return
+    }
+    ws.send(JSON.stringify(number--))
+  }, 10000)
+})
+
+module.exports = server

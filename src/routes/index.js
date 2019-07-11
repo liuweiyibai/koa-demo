@@ -1,5 +1,6 @@
 // const router = require("koa-router")()
-// const path = require("path")
+const path = require('path')
+const fs = require('fs')
 // const util = require("util")
 // const jwt = require("jsonwebtoken")
 // const fs = require("../utils/fs")
@@ -64,13 +65,13 @@
 // module.exports = router
 const router = require('koa-router')()
 
-const openApi = require('./open/index')
-const userApi = require('./api/router_user')
-const businessApi = require('./api/r_bussiness')
+// const openApi = require('./open/index')
+// const userApi = require('./api/router_user')
+// const businessApi = require('./api/r_bussiness')
 
-router.use(openApi.routes(), openApi.allowedMethods())
-router.use(userApi.routes(), userApi.allowedMethods())
-router.use(businessApi.routes(), businessApi.allowedMethods())
+// router.use(openApi.routes(), openApi.allowedMethods())
+// router.use(userApi.routes(), userApi.allowedMethods())
+// router.use(businessApi.routes(), businessApi.allowedMethods())
 
 router.get(`/register`, async ctx => {
   async function delay(time) {
@@ -112,12 +113,34 @@ router.get(`/register`, async ctx => {
 
  * 
  */
-router.post(`/upload/image`,async ctx=>{
-
-  console.log(JSON.stringify(ctx.request.body,null,4))
+router.post(`/upload/image`, async ctx => {
+  console.log(JSON.stringify(ctx.request.body, null, 4))
   console.log(ctx.request.files)
   ctx.body = {
-    code:200
+    code: 200
   }
 })
+
+const send = require('koa-send')
+const request = require('request')
+const util = require('util')
+const http = util.promisify(request)
+const fileName = path.resolve(__dirname, './1.txt')
+router.get(`/open/download/txt`, async ctx => {
+  const { statusCode, body } = await http('http://pub7o9elt.bkt.clouddn.com//64/we.txt')
+  console.log(body)
+  const stats = fs.statSync(fileName)
+  ctx.set('Content-Type', 'application/octet-stream')
+  ctx.set('Content-Disposition', 'attachment;filename=1.txt')
+  ctx.set('Content-Length', stats.size)
+  ctx.body = fs.createReadStream(fileName)
+})
 module.exports = router
+
+const urllib = require('urllib')
+
+// router.get('/file',async ctx=>{
+//     let file = await urllib.request('http://XXX')
+//     ctx.set('Content-disposition','attachment;filename='+'name.jpg');
+//     ctx.body=file.data;
+// })
