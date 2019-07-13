@@ -56,7 +56,6 @@ class userController {
   /**
    * @param
    * @returns void
-   *
    */
   static async destory(ctx) {
     const { id } = ctx.params

@@ -19,7 +19,6 @@ onerror(app)
 // 应用级中间键，对每一个路由都会生效
 // app.use(async (ctx, next) => {
 //   // await next() 进入下一个中间键
-//   await next()
 //   //
 // })
 // 注意中间键的顺序
