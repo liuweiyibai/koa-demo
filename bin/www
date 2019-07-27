@@ -5,7 +5,8 @@
  */
 require('console-color-mr')
 require('../src/syslog/logExist')()
-var app = require('../app')
+// var app = require('../app')
+var server = require('../app')
 var debug = require('debug')('demo:server')
 var http = require('http')
 
@@ -20,7 +21,9 @@ var port = normalizePort(process.env.PORT || '3001')
  * Create HTTP server.
  */
 
-var server = http.createServer(app.callback())
+// var server = http.createServer(app.callback())
+
+
 
 /**
  * Listen on provided port, on all network interfaces.
